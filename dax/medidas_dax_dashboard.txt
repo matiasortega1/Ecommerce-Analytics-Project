@@ -1,0 +1,50 @@
+========================================
+GRUPO 4: KPIs GENERALES (para tarjetas)
+========================================
+
+Cantidad de Clientes =
+DISTINCTCOUNT(orders[customer_id])
+-- Clientes únicos que compraron (no el total de la tabla customers,
+-- que incluiría gente registrada que nunca compró).
+
+Cantidad de Productos Vendidos =
+CALCULATE(
+    SUM(orders[quantity]),
+    orders[order_status] = "Completada"
+)
+
+Cantidad de Devoluciones (ya existe del grupo 2)
+
+Ingresos Netos (ya existe del grupo 2)
+
+
+========================================
+GRUPO 5: RANKING DE PRODUCTOS
+========================================
+
+Ranking Producto por Ingresos =
+RANKX(
+    ALL(products[product_name]),
+    [Ingresos Totales]
+)
+-- ALL(products[product_name]) ignora cualquier filtro de categoría
+-- vigente, así el ranking es siempre global (útil en un "Top 10" visual).
+
+
+========================================
+GRUPO 6: VARIACIÓN MES A MES (requiere tabla Calendario)
+========================================
+
+Ingresos Mes Anterior =
+CALCULATE(
+    [Ingresos Totales],
+    DATEADD(Calendario[Date], -1, MONTH)
+)
+
+Variación % MoM =
+DIVIDE(
+    [Ingresos Totales] - [Ingresos Mes Anterior],
+    [Ingresos Mes Anterior]
+)
+-- Requiere que "Calendario" esté marcada como tabla de fechas
+-- (clic derecho en la tabla → "Marcar como tabla de fechas").

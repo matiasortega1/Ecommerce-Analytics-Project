@@ -1,0 +1,252 @@
+return_id,order_id,return_date,reason,refund_amount
+1,2595,2024-01-28,Producto defectuoso,640.04
+2,1440,2024-01-26,Llegó dañado,193.58
+3,2602,2024-02-09,Talle/medida incorrecta,296.19
+4,2856,2024-02-12,No cumple expectativas,669.96
+5,1535,2024-02-13,Producto defectuoso,1301.8
+6,2303,2024-02-07,Talle/medida incorrecta,695.13
+7,1729,2024-02-04,No cumple expectativas,332.4
+8,1870,2024-02-18,Llegó dañado,1376.7
+9,69,2024-02-19,No cumple expectativas,2314.76
+10,191,2024-02-19,Producto defectuoso,126.76
+11,1180,2024-02-23,Cambio de opinión,254.68
+12,897,2024-02-18,Producto defectuoso,96.76
+13,1685,2024-02-28,No cumple expectativas,149.56
+14,1633,2024-02-24,No cumple expectativas,436.28
+15,1586,2024-03-07,No cumple expectativas,585.76
+16,2878,2024-03-13,Talle/medida incorrecta,746.97
+17,1432,2024-03-10,Cambio de opinión,92.82
+18,223,2024-03-08,Llegó dañado,27.42
+19,2392,2024-03-17,Producto defectuoso,907.87
+20,589,2024-03-28,Producto defectuoso,1607.04
+21,500,2024-03-24,Cambio de opinión,206.46
+22,260,2024-03-29,No cumple expectativas,334.8
+23,790,2024-04-03,No cumple expectativas,79.2
+24,1935,2024-04-03,Producto defectuoso,226.26
+25,429,2024-03-28,Cambio de opinión,339.64
+26,2646,2024-04-13,Llegó dañado,279.24
+27,1134,2024-04-19,No cumple expectativas,3362.16
+28,718,2024-04-20,Producto defectuoso,708.84
+29,1771,2024-04-14,Cambio de opinión,75.54
+30,401,2024-04-20,Producto defectuoso,104.55
+31,539,2024-05-02,Talle/medida incorrecta,1021.38
+32,1905,2024-05-17,Cambio de opinión,585.76
+33,639,2024-05-02,No cumple expectativas,176.61
+34,402,2024-05-09,No cumple expectativas,412.36
+35,695,2024-05-18,Llegó dañado,279.54
+36,808,2024-05-09,Llegó dañado,109.68
+37,350,2024-05-12,Talle/medida incorrecta,265.91
+38,156,2024-06-03,Talle/medida incorrecta,171.04
+39,1337,2024-06-10,Talle/medida incorrecta,367.92
+40,1897,2024-06-03,Talle/medida incorrecta,2472.21
+41,2986,2024-06-10,No cumple expectativas,654.42
+42,310,2024-06-15,No cumple expectativas,338.85
+43,1723,2024-06-22,No cumple expectativas,427.08
+44,428,2024-06-30,Talle/medida incorrecta,139.4
+45,1652,2024-06-25,No cumple expectativas,62.82
+46,2628,2024-07-04,Talle/medida incorrecta,3695.52
+47,914,2024-07-10,Llegó dañado,427.96
+48,2576,2024-07-09,Producto equivocado enviado,1036.09
+49,452,2024-07-17,Llegó dañado,951.45
+50,2201,2024-07-12,Llegó dañado,1102.92
+51,1835,2024-07-17,Producto defectuoso,149.38
+52,2862,2024-07-25,Cambio de opinión,511.95
+53,1100,2024-07-29,Talle/medida incorrecta,146.44
+54,660,2024-07-27,Cambio de opinión,96.79
+55,2973,2024-07-28,Producto equivocado enviado,269.92
+56,1452,2024-08-10,No cumple expectativas,125.22
+57,981,2024-08-03,Producto equivocado enviado,545.72
+58,2436,2024-08-18,Llegó dañado,231.71
+59,266,2024-08-23,Llegó dañado,465.6
+60,2147,2024-09-03,Talle/medida incorrecta,1106.38
+61,2214,2024-08-25,No cumple expectativas,2072.18
+62,1811,2024-09-04,Cambio de opinión,136.43
+63,703,2024-08-27,Producto defectuoso,63.67
+64,2792,2024-09-09,Talle/medida incorrecta,1150.29
+65,2020,2024-09-18,Producto defectuoso,326.24
+66,559,2024-09-10,No cumple expectativas,246.92
+67,2539,2024-09-10,Llegó dañado,257.28
+68,2771,2024-09-21,Cambio de opinión,2011.98
+69,811,2024-09-22,Cambio de opinión,125.64
+70,345,2024-09-20,Llegó dañado,46.12
+71,86,2024-09-17,Llegó dañado,226.26
+72,2264,2024-09-24,Producto equivocado enviado,650.9
+73,2042,2024-09-28,Talle/medida incorrecta,125.64
+74,1232,2024-10-12,Llegó dañado,232.8
+75,788,2024-10-06,Cambio de opinión,372.32
+76,1467,2024-10-08,Cambio de opinión,458.9
+77,2899,2024-10-08,Cambio de opinión,553.19
+78,1483,2024-10-07,Talle/medida incorrecta,159.8
+79,2727,2024-10-19,Talle/medida incorrecta,387.16
+80,1166,2024-10-31,Llegó dañado,307.0
+81,2495,2024-11-01,Llegó dañado,82.26
+82,1216,2024-11-08,Talle/medida incorrecta,169.82
+83,1059,2024-11-05,Producto defectuoso,117.12
+84,1847,2024-11-18,No cumple expectativas,713.32
+85,1010,2024-11-23,Talle/medida incorrecta,887.64
+86,1301,2024-11-11,No cumple expectativas,513.12
+87,760,2024-11-29,Talle/medida incorrecta,2072.18
+88,967,2024-12-03,Producto defectuoso,420.03
+89,461,2024-12-03,Producto defectuoso,580.95
+90,1747,2024-11-26,Cambio de opinión,367.92
+91,2324,2024-12-06,Talle/medida incorrecta,153.5
+92,470,2024-11-26,Cambio de opinión,458.9
+93,2814,2024-12-09,Producto defectuoso,32.88
+94,2689,2024-11-30,No cumple expectativas,1282.2
+95,1516,2024-12-22,Producto defectuoso,27.42
+96,2538,2024-12-26,Producto defectuoso,2521.62
+97,1661,2024-12-12,Producto defectuoso,439.32
+98,2876,2024-12-21,Talle/medida incorrecta,159.8
+99,2411,2024-12-22,Producto defectuoso,1066.5
+100,1888,2024-12-25,Cambio de opinión,166.96
+101,211,2024-12-22,Talle/medida incorrecta,3631.48
+102,1321,2024-12-29,No cumple expectativas,178.48
+103,2550,2024-12-21,Cambio de opinión,480.6
+104,2080,2024-12-21,Talle/medida incorrecta,350.96
+105,1842,2025-01-01,No cumple expectativas,459.22
+106,1089,2024-12-29,Talle/medida incorrecta,1636.96
+107,1114,2024-12-21,Llegó dañado,75.42
+108,753,2025-01-02,Talle/medida incorrecta,98.46
+109,1386,2024-12-30,Producto equivocado enviado,1102.92
+110,2987,2025-01-09,No cumple expectativas,265.91
+111,1645,2025-01-11,Talle/medida incorrecta,11.53
+112,732,2025-01-05,Cambio de opinión,111.18
+113,688,2025-01-16,Llegó dañado,2017.3
+114,2499,2025-01-25,Producto equivocado enviado,206.46
+115,1332,2025-01-21,Cambio de opinión,175.68
+116,1346,2025-01-20,Talle/medida incorrecta,254.68
+117,2216,2025-01-29,Llegó dañado,1591.98
+118,871,2025-02-03,Talle/medida incorrecta,1080.32
+119,133,2025-01-27,Producto defectuoso,355.44
+120,118,2025-01-28,Talle/medida incorrecta,365.46
+121,2069,2025-02-07,No cumple expectativas,459.22
+122,2370,2025-02-10,Llegó dañado,855.52
+123,2134,2025-02-10,Llegó dañado,320.02
+124,2661,2025-02-11,Producto equivocado enviado,79.9
+125,1090,2025-03-02,Producto defectuoso,3379.92
+126,2161,2025-03-11,Talle/medida incorrecta,175.48
+127,2306,2025-03-06,No cumple expectativas,34.59
+128,215,2025-03-02,Talle/medida incorrecta,44.62
+129,2888,2025-03-03,Producto defectuoso,222.36
+130,1769,2025-03-17,Talle/medida incorrecta,251.19
+131,1837,2025-03-09,Llegó dañado,3631.48
+132,323,2025-03-08,No cumple expectativas,265.91
+133,262,2025-03-12,Llegó dañado,133.86
+134,1245,2025-03-14,No cumple expectativas,2122.64
+135,2947,2025-03-19,No cumple expectativas,535.68
+136,2288,2025-03-23,Producto equivocado enviado,359.72
+137,1247,2025-03-22,Producto defectuoso,523.92
+138,297,2025-04-05,No cumple expectativas,551.46
+139,1225,2025-04-06,Producto equivocado enviado,121.82
+140,1469,2025-04-15,Producto defectuoso,91.98
+141,1900,2025-04-17,No cumple expectativas,465.6
+142,1722,2025-04-28,Talle/medida incorrecta,249.4
+143,1462,2025-05-03,Llegó dañado,317.15
+144,2070,2025-05-01,Llegó dañado,266.58
+145,387,2025-04-29,Llegó dañado,83.48
+146,408,2025-05-09,Producto equivocado enviado,965.84
+147,1527,2025-05-13,No cumple expectativas,427.44
+148,2102,2025-05-15,Talle/medida incorrecta,175.48
+149,2421,2025-05-04,Producto equivocado enviado,557.04
+150,67,2025-05-20,Producto defectuoso,89.24
+151,281,2025-05-17,Producto equivocado enviado,446.31
+152,22,2025-06-01,Producto equivocado enviado,32.88
+153,2474,2025-06-08,Producto equivocado enviado,377.14
+154,2037,2025-06-02,Producto defectuoso,557.04
+155,1307,2025-06-11,Talle/medida incorrecta,327.24
+156,1511,2025-06-17,Cambio de opinión,150.86
+157,218,2025-06-09,No cumple expectativas,75.42
+158,1322,2025-06-30,Talle/medida incorrecta,134.96
+159,723,2025-07-03,No cumple expectativas,40.04
+160,957,2025-06-18,Producto defectuoso,585.76
+161,1710,2025-06-21,Cambio de opinión,1376.7
+162,2362,2025-06-23,Producto equivocado enviado,279.24
+163,2692,2025-06-29,Producto defectuoso,226.26
+164,2215,2025-07-10,Producto defectuoso,237.6
+165,1575,2025-07-04,Talle/medida incorrecta,127.13
+166,614,2025-07-16,Producto defectuoso,855.52
+167,2077,2025-07-08,Llegó dañado,109.68
+168,313,2025-07-09,Llegó dañado,350.96
+169,65,2025-07-15,Talle/medida incorrecta,249.3
+170,7,2025-07-21,Cambio de opinión,580.95
+171,458,2025-07-14,Producto defectuoso,160.44
+172,337,2025-07-22,No cumple expectativas,218.14
+173,795,2025-07-25,Cambio de opinión,91.98
+174,2196,2025-07-29,Producto defectuoso,75.43
+175,2002,2025-08-03,No cumple expectativas,393.84
+176,389,2025-08-13,Llegó dañado,2853.28
+177,2085,2025-07-31,No cumple expectativas,46.23
+178,2554,2025-08-10,Talle/medida incorrecta,618.54
+179,257,2025-08-10,Cambio de opinión,144.34
+180,761,2025-08-17,No cumple expectativas,557.04
+181,440,2025-08-21,Talle/medida incorrecta,332.4
+182,1851,2025-08-29,Producto defectuoso,1168.92
+183,976,2025-08-20,Llegó dañado,443.82
+184,2497,2025-08-19,No cumple expectativas,724.38
+185,876,2025-09-04,Cambio de opinión,54.84
+186,2980,2025-08-19,Producto defectuoso,336.68
+187,875,2025-08-21,Cambio de opinión,253.52
+188,2544,2025-09-09,Cambio de opinión,80.08
+189,698,2025-09-07,Cambio de opinión,439.32
+190,300,2025-09-02,Llegó dañado,279.24
+191,199,2025-08-30,No cumple expectativas,257.43
+192,1979,2025-09-12,Talle/medida incorrecta,73.8
+193,285,2025-09-16,No cumple expectativas,275.73
+194,2610,2025-09-15,No cumple expectativas,2361.12
+195,227,2025-09-15,Talle/medida incorrecta,195.8
+196,1037,2025-09-15,Llegó dañado,125.64
+197,2700,2025-09-11,Talle/medida incorrecta,63.38
+198,1422,2025-09-14,Producto equivocado enviado,446.4
+199,2026,2025-09-18,Llegó dañado,292.23
+200,2504,2025-09-18,Talle/medida incorrecta,253.52
+201,868,2025-09-30,Talle/medida incorrecta,1008.65
+202,200,2025-09-19,Talle/medida incorrecta,34.59
+203,1304,2025-09-18,Talle/medida incorrecta,148.77
+204,1088,2025-09-29,No cumple expectativas,275.28
+205,178,2025-09-29,Talle/medida incorrecta,1042.04
+206,663,2025-10-19,Llegó dañado,269.92
+207,219,2025-10-22,No cumple expectativas,531.82
+208,2953,2025-10-24,No cumple expectativas,397.96
+209,925,2025-10-13,No cumple expectativas,355.44
+210,1948,2025-10-26,No cumple expectativas,3432.0
+211,105,2025-10-10,No cumple expectativas,349.2
+212,2203,2025-10-28,Cambio de opinión,334.8
+213,1828,2025-10-17,Llegó dañado,254.26
+214,1704,2025-10-16,No cumple expectativas,1835.6
+215,2350,2025-11-03,Producto equivocado enviado,279.24
+216,2912,2025-10-29,Llegó dañado,75.54
+217,447,2025-10-28,Producto defectuoso,1168.92
+218,2043,2025-11-01,Cambio de opinión,199.85
+219,2334,2025-11-07,Cambio de opinión,195.8
+220,482,2025-11-13,Talle/medida incorrecta,266.58
+221,1562,2025-11-06,No cumple expectativas,522.1
+222,594,2025-11-22,Cambio de opinión,444.72
+223,64,2025-11-19,Producto defectuoso,2011.98
+224,1228,2025-11-22,Talle/medida incorrecta,136.43
+225,2176,2025-11-07,Cambio de opinión,1422.0
+226,2250,2025-11-26,Cambio de opinión,249.3
+227,2062,2025-11-28,Llegó dañado,23.06
+228,1139,2025-11-20,Producto defectuoso,839.71
+229,1420,2025-11-25,No cumple expectativas,175.68
+230,463,2025-11-25,Cambio de opinión,158.4
+231,934,2025-12-01,Llegó dañado,269.92
+232,2520,2025-11-22,Cambio de opinión,253.52
+233,1372,2025-12-05,Producto defectuoso,854.88
+234,165,2025-11-29,Producto equivocado enviado,354.42
+235,1748,2025-11-25,No cumple expectativas,127.13
+236,691,2025-12-01,No cumple expectativas,290.37
+237,1844,2025-11-28,Cambio de opinión,907.87
+238,2901,2025-12-12,Talle/medida incorrecta,4023.96
+239,2708,2025-12-04,Llegó dañado,248.99
+240,1246,2025-12-05,Talle/medida incorrecta,98.46
+241,704,2025-12-04,Cambio de opinión,166.96
+242,2607,2025-12-12,Producto defectuoso,130.81
+243,1914,2025-12-22,Producto defectuoso,746.97
+244,1038,2025-12-24,Llegó dañado,1217.02
+245,1220,2025-12-27,Cambio de opinión,134.96
+246,2913,2025-12-22,Producto equivocado enviado,106.99
+247,171,2025-12-30,No cumple expectativas,140.01
+248,2479,2025-12-31,Llegó dañado,91.98
+249,1017,2025-12-28,No cumple expectativas,136.43
+250,1258,2026-01-10,No cumple expectativas,151.08
+251,1917,2026-01-14,Producto defectuoso,768.88

@@ -1,0 +1,77 @@
+========================================
+GRUPO 1: INGRESOS
+========================================
+
+Ingresos Totales =
+CALCULATE(
+    SUM(orders[total_amount]),
+    orders[order_status] = "Completada"
+)
+-- Por qué CALCULATE: filtra solo órdenes completadas antes de sumar,
+-- así canceladas nunca contaminan el ingreso, sin importar qué
+-- segmentación (categoría, país, fecha) apliques en el visual.
+
+Cantidad de Órdenes Completadas =
+CALCULATE(
+    COUNTROWS(orders),
+    orders[order_status] = "Completada"
+)
+
+Ticket Promedio =
+DIVIDE([Ingresos Totales], [Cantidad de Órdenes Completadas])
+-- Por qué DIVIDE y no "/": evita error de división por cero
+-- si un filtro deja la tabla vacía (ej. categoría sin ventas ese mes).
+
+
+========================================
+GRUPO 2: DEVOLUCIONES
+========================================
+
+Cantidad de Devoluciones =
+COUNTROWS(returns)
+-- No necesita filtrar por status porque returns solo contiene
+-- devoluciones de órdenes ya completadas (así se generó el dataset).
+
+Tasa de Devolución % =
+DIVIDE([Cantidad de Devoluciones], [Cantidad de Órdenes Completadas]) * 100
+
+Monto Reembolsado =
+SUM(returns[refund_amount])
+
+Ingresos Netos (post-devolución) =
+[Ingresos Totales] - [Monto Reembolsado]
+
+
+========================================
+GRUPO 3: SEGMENTO DE CLIENTES (frecuencia)
+========================================
+-- Necesitamos una columna calculada (no medida) porque el segmento
+-- es un atributo fijo por cliente, útil como eje de un visual o slicer.
+-- Se crea en la tabla customers.
+
+Cant Ordenes Cliente =
+CALCULATE(
+    COUNTROWS(orders),
+    orders[order_status] = "Completada"
+)
+-- Esta SÍ puede ser medida, se usa dentro de la columna calculada de abajo.
+
+-- Columna calculada en tabla customers:
+Segmento Frecuencia =
+VAR OrdenesCliente =
+    CALCULATE(
+        COUNTROWS(orders),
+        orders[order_status] = "Completada",
+        orders[customer_id] = customers[customer_id]
+    )
+RETURN
+    SWITCH(
+        TRUE(),
+        OrdenesCliente >= 5, "Alta frecuencia (5+)",
+        OrdenesCliente >= 2, "Media frecuencia (2-4)",
+        OrdenesCliente >= 1, "Baja frecuencia (1)",
+        "Sin compras"
+    )
+
+Gasto Promedio por Cliente =
+DIVIDE([Ingresos Totales], DISTINCTCOUNT(orders[customer_id]))
