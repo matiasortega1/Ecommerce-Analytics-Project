@@ -42,6 +42,7 @@ ecommerce-analytics-project/
 │   └── resumen_hallazgos.md # Resumen ejecutivo de los hallazgos del EDA y el modelo
 ├── dashboard/
 │   ├── ecommerce-analytics-project.pbix  # Archivo real de Power BI — abrí este para explorar el dashboard interactivo
+│   ├── mockup_dashboard.html # Mockup navegable de las 3 páginas del dashboard
 │   └── screenshots/          # Capturas reales del dashboard final en Power BI
 │       ├── 01_resumen_ejecutivo.png
 │       ├── 02_ventas_y_productos.png
@@ -96,6 +97,7 @@ Este proyecto combina trabajo propio con asistencia de IA, y quiero ser transpar
 **Lo que generó Claude (IA) a partir de mis instrucciones:**
 - El script de Python que genera el dataset sintético (`scripts/generate_data.py`), siguiendo la estructura y relaciones que yo especifiqué.
 - Las queries SQL iniciales y las fórmulas DAX, que después validé y adapté sobre el modelo real.
+- Este mismo README y el mockup de layout del dashboard.
 
 La idea de este proyecto no es simular que programé cada línea desde cero, sino mostrar cómo pensar y dirigir un análisis de datos de punta a punta — incluyendo el uso criterioso de herramientas de IA como parte del flujo de trabajo real de un analista hoy en día.
 
@@ -130,7 +132,7 @@ Si preferís reconstruirlo desde cero como ejercicio:
 1. "Obtener datos" → "Texto o CSV" → importá los 4 archivos de `data/`.
 2. Armá las relaciones según el esquema de arriba.
 3. Pegá las medidas de `dax/medidas_dax.txt` y `dax/medidas_dax_dashboard.txt`.
-4. Usá las capturas en `screenshots/` como referencia de layout.
+4. Usá `dashboard/mockup_dashboard.html` y las capturas en `screenshots/` como referencia de layout.
 
 ---
 
