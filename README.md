@@ -41,6 +41,7 @@ ecommerce-analytics-project/
 ├── docs/
 │   └── resumen_hallazgos.md # Resumen ejecutivo de los hallazgos del EDA y el modelo
 ├── dashboard/
+│   ├── ecommerce-analytics-project.pbix  # Archivo real de Power BI — abrí este para explorar el dashboard interactivo
 │   ├── mockup_dashboard.html # Mockup navegable de las 3 páginas del dashboard
 │   └── screenshots/          # Capturas reales del dashboard final en Power BI
 │       ├── 01_resumen_ejecutivo.png
@@ -103,13 +104,14 @@ for t in ['customers','products','orders','returns']:
 ### 3. Correr las queries
 Abrí `sql/queries.sql` en cualquier cliente SQLite (DB Browser for SQLite, DBeaver) apuntando a `database/ecommerce.db`.
 
-### 4. Levantar el dashboard en Power BI
-1. Abrí Power BI Desktop → "Obtener datos" → "Texto o CSV" → importá los 4 archivos de `data/`.
+### 4. Abrir el dashboard en Power BI
+El archivo real ya está incluido en el repo: [`dashboard/ecommerce-analytics-project.pbix`](dashboard/ecommerce-analytics-project.pbix). Descargalo y abrilo directo con Power BI Desktop (gratuito, disponible solo para Windows) — no hace falta reconstruir nada, ya tiene el modelo, las relaciones y las medidas DAX cargadas.
+
+Si preferís reconstruirlo desde cero como ejercicio:
+1. "Obtener datos" → "Texto o CSV" → importá los 4 archivos de `data/`.
 2. Armá las relaciones según el esquema de arriba.
 3. Pegá las medidas de `dax/medidas_dax.txt` y `dax/medidas_dax_dashboard.txt`.
-4. Usá `dashboard/mockup_dashboard.html` (layout) y las capturas en `dashboard/screenshots/` (resultado final) como referencia.
-
-> El archivo `.pbix` no está incluido en este repo. Podés reconstruirlo siguiendo los pasos de arriba, o abrir directamente las capturas para ver el resultado final.
+4. Usá `dashboard/mockup_dashboard.html` y las capturas en `screenshots/` como referencia de layout.
 
 ---
 
@@ -174,7 +176,7 @@ Código completo en [`scripts/model.py`](scripts/model.py).
 
 - [ ] Segmentación RFM completa (Recencia, Frecuencia, Monto)
 - [ ] Modelo de forecasting de ventas (series de tiempo)
-- [ ] Publicar el dashboard en Power BI Service (actualmente solo capturas locales, no hay link público)
+- [ ] Publicar el dashboard en Power BI Service para tener un link interactivo además del `.pbix` descargable
 
 ---
 
