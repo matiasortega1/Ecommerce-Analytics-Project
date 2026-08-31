@@ -2,7 +2,7 @@
 
 Proyecto de análisis de datos end-to-end sobre un dataset sintético de e-commerce: generación de datos, modelado relacional, exploración en SQL, dashboard en Power BI y un modelo predictivo de devoluciones.
 
-> **Nota sobre los datos**: el dataset es **sintético**, generado programáticamente con relaciones realistas (estacionalidad, tasas de devolución por categoría, antigüedad de cliente vs. frecuencia de compra) para fines de práctica y portfolio. No corresponde a un negocio real.
+> **Nota sobre los datos**: el dataset es **sintético y generado con asistencia de IA** (Claude, de Anthropic) a partir de criterios que definí yo — dominio, tablas, cantidad de filas, relaciones entre entidades (estacionalidad, tasas de devolución por categoría, antigüedad de cliente vs. frecuencia de compra). El código de generación está en [`scripts/generate_data.py`](scripts/generate_data.py). Más detalle en la sección [Metodología](#-metodología-y-uso-de-ia) más abajo. No corresponde a un negocio real.
 
 ---
 
@@ -79,6 +79,27 @@ customers (1) ───────< orders (*) >─────── (1) produ
 - **SQL / SQLite** — consultas analíticas y almacenamiento relacional
 - **Power BI** — modelado semántico (DAX) y dashboard interactivo
 - **DAX** — medidas de negocio (ingresos, tasa de devolución, segmentación RFM simplificada)
+- **Claude (Anthropic)** — asistencia de IA para la generación del dataset sintético y como apoyo de consulta durante el desarrollo (ver sección de Metodología)
+
+---
+
+## 🧠 Metodología y uso de IA
+
+Este proyecto combina trabajo propio con asistencia de IA, y quiero ser transparente sobre en qué parte se usó cada una:
+
+**Lo que definí yo:**
+- El dominio del proyecto (e-commerce) y las preguntas de negocio a responder.
+- La estructura de tablas necesaria (clientes, productos, órdenes, devoluciones) y cómo debían relacionarse.
+- Los criterios de diseño del dataset: cantidad de filas por tabla, qué relaciones debían existir entre variables (por ejemplo, que la categoría de producto influyera en la tasa de devolución, o que la fecha de compra tuviera estacionalidad).
+- Las decisiones de modelado en Power BI: qué páginas armar, qué visualizaciones usar para cada pregunta, cómo segmentar a los clientes.
+- La revisión, interpretación y corrección de todos los resultados (incluyendo debug de errores reales de configuración regional en Power BI que aparecieron durante la carga de datos).
+
+**Lo que generó Claude (IA) a partir de mis instrucciones:**
+- El script de Python que genera el dataset sintético (`scripts/generate_data.py`), siguiendo la estructura y relaciones que yo especifiqué.
+- Las queries SQL iniciales y las fórmulas DAX, que después validé y adapté sobre el modelo real.
+- Este mismo README y el mockup de layout del dashboard.
+
+La idea de este proyecto no es simular que programé cada línea desde cero, sino mostrar cómo pensar y dirigir un análisis de datos de punta a punta — incluyendo el uso criterioso de herramientas de IA como parte del flujo de trabajo real de un analista hoy en día.
 
 ---
 
@@ -182,4 +203,4 @@ Código completo en [`scripts/model.py`](scripts/model.py).
 
 ## 👤 Autor
 
-Proyecto de práctica de análisis de datos — SQL, Python y Power BI.
+Proyecto de práctica de análisis de datos — SQL, Python y Power BI, con asistencia de IA (Claude, Anthropic) para la generación de datos y documentación. Ver sección [Metodología](#-metodología-y-uso-de-ia) para el detalle de qué se hizo con y sin IA.

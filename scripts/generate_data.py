@@ -1,3 +1,14 @@
+"""
+Generación de dataset sintético de e-commerce.
+
+Este script fue generado por Claude (IA de Anthropic) siguiendo criterios
+definidos por el autor del proyecto: estructura de 4 tablas relacionadas
+(customers, products, orders, returns), volumen de filas por tabla, y
+relaciones deliberadas entre variables (estacionalidad en las ventas,
+tasa de devolución distinta por categoría, antigüedad de cliente
+correlacionada con frecuencia de compra) para que el dataset tenga
+señal realista y sirva para practicar análisis end-to-end.
+"""
 import numpy as np
 import pandas as pd
 from datetime import datetime, timedelta
